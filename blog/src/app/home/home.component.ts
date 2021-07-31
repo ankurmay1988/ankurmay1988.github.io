@@ -6,6 +6,30 @@ type CVData = {
   email: string;
   mobile: string;
   picture: string;
+  linkedIn?: string;
+  github?: string;
+  website?: string;
+  careerSummary: string;
+  workExperience: {
+    position: string;
+    company: string;
+    year1: string;
+    year2: string;
+    roleDescription: string;
+    technologies?: string[];
+  }[];
+  skills?: {
+    name: string;
+    rating: number;
+    category?: string;
+  }[];
+  education?: {
+    degree: string;
+    university: string;
+    percentile: string;
+    year1: string;
+    year2: string;
+  }[];
 };
 
 @Component({
@@ -22,6 +46,16 @@ export class HomeComponent implements OnInit {
       mobile: '+91 9887863958',
       profile: 'Full-Stack Developer (.Net)',
       picture: 'assets/ankur.jpg',
+      github: 'https://www.github.com/ankurmay1988',
+      linkedIn: 'https://www.linkedin.com/in/ankur-mathur-07299274/',
+      website: 'https://www.ankurmathur.in/',
+      careerSummary: '',
+      workExperience: [
+        {
+          company: 'Nagarro',
+        },
+      ],
+      skills: [],
     };
   }
 
