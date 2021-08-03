@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
       github: 'https://www.github.com/ankurmay1988',
       linkedIn: 'https://www.linkedin.com/in/ankur-mathur-07299274/',
       website: 'https://www.ankurmathur.in/',
-      careerSummary: '',
+      careerSummary: 'To the best of my efforts.',
       workExperience: [
         {
           company: 'Nagarro',
